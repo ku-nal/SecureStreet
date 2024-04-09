@@ -15,7 +15,7 @@ app.use("/criminal", criminalRoutes);
 app.use("/report", reportRoutes);
 
 mongoose
-  .connect("mongodb://0.0.0.0:27017/Crime-Management")
+  .connect("mongodb+srv://kunalmakwana18:kunalmakwana18@crime-management.ttur9vz.mongodb.net/?retryWrites=true&w=majority&appName=Crime-Management")
   .then(() => {
     console.log("connected to db");
   })
